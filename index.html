@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap 5 -Transparent Navbar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <style>
+    .banner-image {
+      background-image: url('images/banner.jpg');
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">CityScape</a>
+
+    <button 
+      type="button" 
+      class="navbar-toggler" 
+      data-bs-target="#navbarNav"
+      data-bs-toggle="collapse"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-lable="Toggle Navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Content</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hero Page Image -->
+  <div 
+    class="banner-image w-100 vh-100 d-flex justify-content-center 
+    align-items-center"
+    >
+    <div class="content text-center">
+      <h1 class="text-white">CityScape</h1>
+    </div>
+  </div>
+
+    <!-- Main Content Area -->
+
+  <div class="container my-5 d-grid gap-5"> 
+      <div class="p-5 border"> 
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nostrum magni dolorem eos modi? Delectus, exercitationem neque. Natus blanditiis omnis cupiditate ut at quidem, optio ratione eos totam facilis deserunt!</p> 
+         </div> 
+          <div class="p-5 border"> 
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nostrum magni dolorem eos modi? Delectus, exercitationem neque. Natus blanditiis omnis cupiditate ut at quidem, optio ratione eos totam facilis deserunt!</p>
+          </div> 
+            <div class="p-5 border"> 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nostrum magni dolorem eos modi? Delectus, exercitationem neque. Natus blanditiis omnis cupiditate ut at quidem, optio ratione eos totam facilis deserunt!</p>
+          </div> 
+        <div class="p-5 border">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nostrum magni dolorem eos modi? Delectus, exercitationem neque. Natus blanditiis omnis cupiditate ut at quidem, optio ratione eos totam facilis deserunt!</p>
+  </div>
+      </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+    <Script>
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function(){
+        if(window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        }else{
+          nav.classList.remove('bg-dark','shadow');
+        }
+      });
+    </Script>
+  </body>
+</html>
